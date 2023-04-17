@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./ressources/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./ressources/img/favicon.png">
+  </head>
+  <body>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeWelcomeBtn">&times;</span>
+            <h2>This a Welcome page !</h2>
+        <p> I needed a Welcome page so here it is ! <br>
+            Welcome to Quentin's Pokemon Card Generator !!
+        </p>
+        </div>
+    </div>
+    
+
+    <h1>Generate a Pokemon Card !</h1>
+
+    <div class="container">
+      <div id="card"></div>
+      <button id="btn">Generate</button>
+    </div>
+
+<footer>
+    <button id="openFormBtn">Contact Me !</button>
+
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span id="closeFormBtn">&times;</span>
+            <form id="contactForm" action="/submit_form" method="POST">
+                <h2>Contact Form</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="openLegalBtn" class="legal-btn">Legal Mentions</button>
+
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLegalBtn">&times;</span>
+            <h2>Legal Mentions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend, quam vitae feugiat facilisis, tellus odio hendrerit nunc, id placerat neque velit at urna. Aenean mollis tristique justo, ut vestibulum est consectetur a. Maecenas blandit tellus quis metus bibendum, ut viverra dui iaculis. Sed ac lacus nec enim bibendum pellentesque. Praesent bibendum et velit at imperdiet. Suspendisse potenti.</p>
+        </div>
+    </div>
+    
+
+</footer>
+    
+    
+
+    <script src="./ressources/js/script.js"></script>
+  </body>
+</html>
